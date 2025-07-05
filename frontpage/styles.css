@@ -1,0 +1,282 @@
+/* body {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: #fefdf6;
+  color: #2f3e2f;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.hero {
+  background: #d6f2cc;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: #3a7244;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #2f5e39;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.wave-top {
+  top: 0;
+  transform: rotate(180deg);
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyBmaWxsPSIjZmVmZGY2IiB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGQ9J00wIDEwQzIwIDAgNDAgMjAgNjAgMjAgODAgMjAgMTAwIDAgMTAwIDBWNzBIMFYxMFonIC8+PC9zdmc+');
+}
+
+.wave-bottom {
+  bottom: 0;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyBmaWxsPSIjZDZmMmNjIiB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGQ9J00wIDcwQzIwIDcwIDQwIDUwIDYwIDUwIDgwIDUwIDEwMCA3MCAxMDAgNzBWMEgwVjcwWicgLz48L3N2Zz4=');
+}
+
+.about {
+  background: #fefdf6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  width: 180px;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.how-it-works {
+  background: #b2dbc8;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.how-content img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-top: 30px;
+} */
+body {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: #fefdf6;
+  color: #2f3e2f;
+}
+
+.intro-section {
+  background-image: url('backgound.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  color: #2d4b2f;
+}
+
+.intro-content {
+  background-color: rgba(255, 255, 255, 0.75); /* subtle background */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo-frame img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid #6fa878;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #336633;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2a5a2a;
+}
+
+
+.about-section {
+  background-color: #d9efd8;  /* soft green matching previous section */
+  padding: 60px 40px;
+  text-align: center;
+}
+
+
+.about-header h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 36px;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-family: 'Comic Neue', cursive;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #444;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 300px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #7030a0;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 30px;
+  background-color: #d2e9d1;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  text-align: center;
+  max-width: 180px;
+  margin-bottom: 30px;
+}
+
+.feature-circle {
+  width: 270px;               /* ⬆️ Increased from 160px */
+  height: 270px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+}
+
+.feature-circle img {
+  width: 95%;                 /* Almost fills the frame */
+  height: auto;
+  object-fit: contain;
+}
+.feature-circle:hover img {
+  transform: scale(1.1);
+}
+.laughnav-footer {
+  background-color: #fdf8f4; /* Light pastel tone */
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  padding: 30px 20px;
+  font-size: 18px;
+  color: #333;
+  border-top: 3px solid #c2d6c3; /* Light border for separation */
+}
+
+.laughnav-footer a {
+  text-decoration: none;
+  color: #4caf50; /* Soft green */
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.laughnav-footer a:hover {
+  color: #2e7d32;
+}
+
+
+
+
+/* Keep rest of styles like .icons, .reviews, footer same */
+
+
+
+
+
+
