@@ -318,9 +318,30 @@ document.getElementById("find").addEventListener("click", async () => {
   }
 });
 
+// async function requestFunnyStory(startLabel, endLabel, pois, startCoord, endCoord) {
+//   try {
+//     const res = await fetch('https://laughnav-backend.onrender.com/',{
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify({
+//         start: startLabel,
+//         end: endLabel,
+//         pois,
+//         startCoord,
+//         endCoord
+//       })
+//     });
+
+//     const data = await res.json();
+//     document.getElementById('story').innerHTML = data.story || 'No story received.';
+//   } catch (err) {
+//     console.error('Story fetch error:', err);
+//     document.getElementById('story').innerText = '❌ Failed to load story.';
+//   }
+// }
 async function requestFunnyStory(startLabel, endLabel, pois, startCoord, endCoord) {
   try {
-    const res = await fetch('http://localhost:3000/generate-story', {
+    const res = await fetch('https://laughnav-backend.onrender.com/generate-story', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -339,4 +360,5 @@ async function requestFunnyStory(startLabel, endLabel, pois, startCoord, endCoor
     document.getElementById('story').innerText = '❌ Failed to load story.';
   }
 }
+
 
