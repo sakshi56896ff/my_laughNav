@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (startButton) {
     startButton.addEventListener("click", function () {
-      window.location.href = "../mainpage/indexm.html";
+      window.location.href = "map.html";
     });
   }
 });
